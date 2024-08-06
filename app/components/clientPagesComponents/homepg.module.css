@@ -1,0 +1,62 @@
+.head {
+  overflow: hidden;
+}
+.head img {
+  transition: transform 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.head img:hover {
+  transform: scale(1.01);
+  overflow: hidden;
+}
+.imagetop {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.imagemiddle {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding-top: 15px;
+  padding-bottom: 50px;
+}
+
+.imagebottom {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 40px;
+  padding-top: 35px;
+  padding-bottom: 50px;
+}
+
+.text {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  font-size: large;
+  text-align: left;
+}
+
+.belowbottom {
+  display: flex;
+  justify-content: center;
+  gap: 0px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.video {
+  text-align: center;
+}
