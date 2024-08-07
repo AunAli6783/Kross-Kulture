@@ -1,22 +1,39 @@
+"use client";
+
 import React from "react";
 import Link from "next/link";
 import styles from "./clientside.module.css";
-
+import { useState } from "react";
 import { RxDropdownMenu } from "react-icons/rx";
 import { CiSearch } from "react-icons/ci";
 import { CiHeart } from "react-icons/ci";
 import { CiShoppingBasket } from "react-icons/ci";
 
 export default function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
   return (
     <main className={styles.nav}>
       <nav className={styles.red}>
-        <div className={styles.kross}>
-          <Link href={"/"}>KROSS KULTURE</Link>
+        <button
+          className={menuOpen ? styles.mainbtn : styles.btn2}
+          onClick={toggleMenu}
+        >
+          <RxDropdownMenu className={menuOpen ? styles.nobar : styles.bar} />
+        </button>
+        <div className={menuOpen ? styles.kross : styles.kross2}>
+          <Link href={"/"} onClick={toggleMenu}>
+            KROSS KULTURE
+          </Link>
         </div>
-        <ul className={styles.list}>
+
+        <ul className={menuOpen ? styles.newlist : styles.list}>
           <li>
-            <Link href={"/NewIn"}>NEWIN</Link>
+            <Link href={"/NewIn"} onClick={toggleMenu}>
+              NEWIN
+            </Link>
           </li>
           <li>
             <Link href={"/Accessories"}>ACCESSORIES</Link>
@@ -44,9 +61,6 @@ export default function Header() {
           </li>
         </ul>
         <div>
-          <button className={styles.btn}>
-            <RxDropdownMenu className={styles.icons} />
-          </button>
           <CiSearch className={styles.icons} />
           <CiHeart className={styles.icons} />
           <CiShoppingBasket className={styles.icons} />
