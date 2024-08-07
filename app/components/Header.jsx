@@ -3,16 +3,32 @@
 import React from "react";
 import Link from "next/link";
 import styles from "./clientside.module.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { RxDropdownMenu } from "react-icons/rx";
 import { CiSearch } from "react-icons/ci";
 import { CiHeart } from "react-icons/ci";
 import { CiShoppingBasket } from "react-icons/ci";
 
 export default function Header() {
+  const [width, setWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    // return () => {
+    //   window.removeEventListener("resize", handleResize);
+    // };
+  });
+
   const [menuOpen, setMenuOpen] = useState(false);
   const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
+    if (width < 322) {
+      setMenuOpen(!menuOpen);
+    }
   };
   return (
     <main className={styles.nav}>
