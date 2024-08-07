@@ -52,7 +52,14 @@ export default function Header() {
             </Link>
           </li>
           <li>
-            <Link href={"/Accessories"}>ACCESSORIES</Link>
+            <div className={styles.dropdown}>
+              <Link href={"/Accessories"}>ACCESSORIES</Link>
+              <div className={styles.content}>
+                <a href="#">Link1 </a>
+                <a href="#">Link2 </a>
+                <a href="#">Link3 </a>
+              </div>
+            </div>
           </li>
           <li>
             <Link href={"/Western"}>WESTERN</Link>

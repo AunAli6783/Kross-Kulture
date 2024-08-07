@@ -1,28 +1,57 @@
+"use client";
+
 import React from "react";
+
 import styles from "./homepg.module.css";
+
 export default function HomepageCSR() {
   return (
     <div>
       <div className={styles.head}>
         <div className={styles.imagetop}>
           <img
+            className={styles.laptop2}
             src="https://cdn.comverseglobal.com/kross_kulture/products/product_images/main-banner-1800x600-slide-2.jpg%3Fwidth%3D1300"
+            alt="img1"
+            height={"auto"}
+            width={"90%"}
+          />
+          <img
+            className={styles.mobile}
+            src="https://cdn.comverseglobal.com/kross_kulture/products/product_images/enchanted-elegance-mbo1_1_11zon.jpg%3Fwidth%3D640"
             alt="img1"
             height={"auto"}
             width={"90%"}
           />
         </div>
 
-        <div className={styles.imagemiddle}>
+        <div className={styles.imagemiddle} id={styles.id}>
           <img
+            className={styles.laptop}
             src="https://cdn.comverseglobal.com/kross_kulture/products/product_images/categr-1-1.jpg"
             alt="img2"
             height={"auto"}
             width={"45%"}
           />
+          <img
+            className={styles.middlemobile}
+            src=" https://cdn.comverseglobal.com/kross_kulture/products/product_images/untitled-2.jpg"
+            alt="img2"
+            height={"auto"}
+            width={"90%"}
+          />
 
           <img
+            className={styles.laptop}
             src="https://cdn.comverseglobal.com/kross_kulture/products/product_images/categr-2.jpg"
+            alt="img3"
+            height={"auto"}
+            width={"45%"}
+          />
+
+          <img
+            className={styles.mobile2}
+            src="https://cdn.comverseglobal.com/kross_kulture/products/product_images/untitled-1.jpg"
             alt="img3"
             height={"auto"}
             width={"45%"}
@@ -128,14 +157,30 @@ export default function HomepageCSR() {
         <div className={styles.belowbottom}>
           <div>
             <img
+              className={styles.laptop}
               src="https://cdn.comverseglobal.com/kross_kulture/products/product_images/section-2.jpg"
+              alt="img"
+              width={"90%"}
+            />
+
+            <img
+              className={styles.newmobile}
+              src="https://cdn.comverseglobal.com/kross_kulture/products/product_images/untitled-4.jpg"
               alt="img"
               width={"90%"}
             />
           </div>
           <div>
             <img
+              className={styles.laptop}
               src="https://cdn.comverseglobal.com/kross_kulture/products/product_images/section-1.jpg"
+              alt="img"
+              width={"90%"}
+            />
+
+            <img
+              className={styles.newmobile}
+              src="https://cdn.comverseglobal.com/kross_kulture/products/product_images/mom-me-new-banner.webp"
               alt="img"
               width={"90%"}
             />

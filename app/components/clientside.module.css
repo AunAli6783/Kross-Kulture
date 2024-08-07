@@ -1,3 +1,39 @@
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.content {
+  display: none;
+  position: absolute;
+  right: 0;
+  left: 0;
+  background-color: #f9f9f9;
+  min-width: 20px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.content a {
+  color: black;
+  padding-top: 15px;
+  padding-left: 20px;
+
+  text-decoration: none;
+  display: block;
+}
+
+.content a:hover {
+  background-color: #f1f1f1;
+}
+.dropdown:hover .content {
+  display: block;
+  width: 200px;
+}
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
 .red {
   display: grid;
   grid-template-columns: 0.2fr 1.5fr 0.2fr;
@@ -232,8 +268,8 @@
   }
 
   .kross {
-    color: white;
-    background-color: black;
+    color: black;
+    background-color: white;
     height: 1000px;
     width: 700px;
     padding-top: 20px;
@@ -250,7 +286,7 @@
 
   .newlist {
     position: absolute;
-    color: #eee;
+    color: black;
     display: inline-flex;
     flex-direction: column;
     font-weight: 400;
@@ -282,8 +318,8 @@
   }
 
   .mainbtn {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     border: 0;
     padding-top: 20px;
     width: 40px;
@@ -293,7 +329,7 @@
   .nobar {
     height: 20px;
     width: 20px;
-    color: #fff;
+    color: black;
     padding-bottom: 1100px;
     padding-right: 5px;
   }
@@ -303,6 +339,11 @@
     padding: 3px;
     padding-left: 15px;
     padding-bottom: 15px;
+    visibility: hidden;
+  }
+
+  .dropdown:hover .content {
+    display: none;
     visibility: hidden;
   }
 }
