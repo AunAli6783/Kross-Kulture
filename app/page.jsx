@@ -4,6 +4,7 @@ import Link from "next/link";
 import HomepageCSR from "./components/clientPagesComponents/HomepageCSR";
 
 export default function Home() {
+  // json object
   return (
     <main className={styles.main}>
       <HomepageCSR />

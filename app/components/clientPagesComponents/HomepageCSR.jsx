@@ -73,18 +73,32 @@ export default function HomepageCSR() {
 
           <div>
             <img
-              src="https://cdn.comverseglobal.com/kross_kulture/products/product_images/ellipse-19-7.png%3Fwidth%3D150"
+              src="https://cdn.comverseglobal.com/kross_kulture/products/product_images/ellipse-19990.png%3Fwidth%3D150"
               alt="image3"
             />
-            <p>NEW ARRIVAL</p>
+            <p>BRIDAL</p>
           </div>
 
           <div>
             <img
-              src="https://cdn.comverseglobal.com/kross_kulture/products/product_images/ellipse-19-7.png%3Fwidth%3D150"
-              alt="image3"
+              src="https://cdn.comverseglobal.com/kross_kulture/products/product_images/ellipse-99.png%3Fwidth%3D150"
+              alt="image4"
             />
-            <p>NEW ARRIVAL</p>
+            <p>SALE</p>
+          </div>
+          <div>
+            <img
+              src="https://cdn.comverseglobal.com/kross_kulture/products/product_images/ellipse-199.png%3Fwidth%3D150"
+              alt="image5"
+            />
+            <p>EVERYDAY USUAL</p>
+          </div>
+          <div>
+            <img
+              src="https://cdn.comverseglobal.com/kross_kulture/products/product_images/ellipse-1909.png%3Fwidth%3D150"
+              alt="image6"
+            />
+            <p>MINIMALIST</p>
           </div>
 
           <div>
@@ -97,20 +111,11 @@ export default function HomepageCSR() {
 
           <div>
             <img
-              src="https://cdn.comverseglobal.com/kross_kulture/products/product_images/ellipse-199.png%3Fwidth%3D150"
-              alt="image5"
+              src="https://cdn.comverseglobal.com/kross_kulture/products/product_images/ellipse-19-7.png%3Fwidth%3D150"
+              alt="image3"
             />
-            <p>EVERYDAY USUAL</p>
+            <p>NEW ARRIVAL</p>
           </div>
-
-          <div>
-            <img
-              src="https://cdn.comverseglobal.com/kross_kulture/products/product_images/ellipse-1909.png%3Fwidth%3D150"
-              alt="image6"
-            />
-            <p>MINIMALIST</p>
-          </div>
-
           <div>
             <img
               src="https://cdn.comverseglobal.com/kross_kulture/products/product_images/ellipse-190023.png%3Fwidth%3D150"
@@ -118,13 +123,20 @@ export default function HomepageCSR() {
             />
             <p>USUAL</p>
           </div>
-
           <div>
             <img
               src="https://cdn.comverseglobal.com/kross_kulture/products/product_images/ellipse-19990.png%3Fwidth%3D150"
               alt="image3"
             />
             <p>BRIDAL</p>
+          </div>
+
+          <div>
+            <img
+              src="https://cdn.comverseglobal.com/kross_kulture/products/product_images/ellipse-99.png%3Fwidth%3D150"
+              alt="image4"
+            />
+            <p>SALE</p>
           </div>
         </div>
         <div className={styles.text}>

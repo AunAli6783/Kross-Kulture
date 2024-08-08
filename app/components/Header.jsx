@@ -26,7 +26,7 @@ export default function Header() {
 
   const [menuOpen, setMenuOpen] = useState(false);
   const toggleMenu = () => {
-    if (width < 322) {
+    if (width < 900) {
       setMenuOpen(!menuOpen);
     }
   };

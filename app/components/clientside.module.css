@@ -162,7 +162,7 @@
   padding-left: 50px;
 }
 
-@media (max-width: 321px) {
+@media (max-width: 900px) {
   .red {
     display: grid;
     grid-template-columns: 0.2fr 1fr 0.2fr;
