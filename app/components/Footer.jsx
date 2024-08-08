@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./clientside.module.css";
 export const Footer = () => {
   return (
-    <div>
+    <div className={styles.mainfooter}>
       <div className={styles.footer}>
         <div className={styles.footinfo}>
           <div className={styles.subhead}>INFORMATION</div>

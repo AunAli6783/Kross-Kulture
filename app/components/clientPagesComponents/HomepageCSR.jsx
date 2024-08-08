@@ -6,7 +6,7 @@ import styles from "./homepg.module.css";
 
 export default function HomepageCSR() {
   return (
-    <div>
+    <div className={styles.main}>
       <div className={styles.head}>
         <div className={styles.imagetop}>
           <img
@@ -14,14 +14,14 @@ export default function HomepageCSR() {
             src="https://cdn.comverseglobal.com/kross_kulture/products/product_images/main-banner-1800x600-slide-2.jpg%3Fwidth%3D1300"
             alt="img1"
             height={"auto"}
-            width={"90%"}
+            width={"100%"}
           />
           <img
             className={styles.mobile}
             src="https://cdn.comverseglobal.com/kross_kulture/products/product_images/enchanted-elegance-mbo1_1_11zon.jpg%3Fwidth%3D640"
             alt="img1"
             height={"auto"}
-            width={"90%"}
+            width={"100%"}
           />
         </div>
 
@@ -31,14 +31,14 @@ export default function HomepageCSR() {
             src="https://cdn.comverseglobal.com/kross_kulture/products/product_images/categr-1-1.jpg"
             alt="img2"
             height={"auto"}
-            width={"45%"}
+            width={"50%"}
           />
           <img
             className={styles.middlemobile}
             src=" https://cdn.comverseglobal.com/kross_kulture/products/product_images/untitled-2.jpg"
             alt="img2"
             height={"auto"}
-            width={"90%"}
+            width={"100%"}
           />
 
           <img
@@ -46,7 +46,7 @@ export default function HomepageCSR() {
             src="https://cdn.comverseglobal.com/kross_kulture/products/product_images/categr-2.jpg"
             alt="img3"
             height={"auto"}
-            width={"45%"}
+            width={"50%"}
           />
 
           <img
@@ -63,6 +63,22 @@ export default function HomepageCSR() {
         </div>
 
         <div className={styles.imagebottom}>
+          <div>
+            <img
+              src="https://cdn.comverseglobal.com/kross_kulture/products/product_images/ellipse-19-7.png%3Fwidth%3D150"
+              alt="image3"
+            />
+            <p>NEW ARRIVAL</p>
+          </div>
+
+          <div>
+            <img
+              src="https://cdn.comverseglobal.com/kross_kulture/products/product_images/ellipse-19-7.png%3Fwidth%3D150"
+              alt="image3"
+            />
+            <p>NEW ARRIVAL</p>
+          </div>
+
           <div>
             <img
               src="https://cdn.comverseglobal.com/kross_kulture/products/product_images/ellipse-19-7.png%3Fwidth%3D150"
@@ -120,37 +136,41 @@ export default function HomepageCSR() {
             <img
               src="https://cdn.comverseglobal.com/kross_kulture/products/product_images/DSC07256-2.jpg%3Fwidth%3D440"
               alt="img"
-              width={"90%"}
+              width={"100%"}
               height={"auto"}
             />
-            <p>Garnet UN-765</p>
+            <h4>Garnet UN-765 (3 Pieces)</h4>
+            <p>PKR 11,000</p>
           </div>
           <div>
             <img
               src="https://cdn.comverseglobal.com/kross_kulture/products/product_images/DSC07527.jpg%3Fwidth%3D440"
-              width={"90%"}
+              width={"100%"}
               height={"auto"}
               alt="img"
             />
-            <p>Jasmine UN-778</p>
+            <h4>Jasmine UN-778 (3 Pieces)</h4>
+            <p>PKR 11,000</p>
           </div>
           <div>
             <img
               src="https://cdn.comverseglobal.com/kross_kulture/products/product_images/DSC07280_1.jpg%3Fwidth%3D440"
               alt="img"
-              width={"90%"}
+              width={"100%"}
               height={"auto"}
             />
-            <p>Regal UN-708</p>
+            <h4>Regal UN-708 (3 Pieces)</h4>
+            <p>PKR 11,000</p>
           </div>
           <div>
             <img
               src="https://cdn.comverseglobal.com/kross_kulture/products/product_images/DSC07532.jpg%3Fwidth%3D440"
               alt="img"
-              width={"90%"}
+              width={"100%"}
               height={"auto"}
             />
-            <p>Mehar UN-707</p>
+            <h4>Mehar UN-707 (3 Pieces)</h4>
+            <p>PKR 11,000</p>
           </div>
         </div>
 
@@ -160,14 +180,14 @@ export default function HomepageCSR() {
               className={styles.laptop}
               src="https://cdn.comverseglobal.com/kross_kulture/products/product_images/section-2.jpg"
               alt="img"
-              width={"90%"}
+              width={"100%"}
             />
 
             <img
               className={styles.newmobile}
               src="https://cdn.comverseglobal.com/kross_kulture/products/product_images/untitled-4.jpg"
               alt="img"
-              width={"90%"}
+              width={"100%"}
             />
           </div>
           <div>
@@ -175,14 +195,14 @@ export default function HomepageCSR() {
               className={styles.laptop}
               src="https://cdn.comverseglobal.com/kross_kulture/products/product_images/section-1.jpg"
               alt="img"
-              width={"90%"}
+              width={"100%"}
             />
 
             <img
               className={styles.newmobile}
               src="https://cdn.comverseglobal.com/kross_kulture/products/product_images/mom-me-new-banner.webp"
               alt="img"
-              width={"90%"}
+              width={"100%"}
             />
           </div>
         </div>
@@ -190,7 +210,7 @@ export default function HomepageCSR() {
         <div className={styles.video}>
           <video
             controls
-            width={"90%"}
+            width={"100%"}
             height={"auto"}
             preload="auto"
             muted
