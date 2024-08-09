@@ -1,13 +1,39 @@
-import Image from "next/image";
+import fs from "fs";
+import path from "path";
 import styles from "./page.module.css";
-import Link from "next/link";
 import HomepageCSR from "./components/clientPagesComponents/HomepageCSR";
 
-export default function Home() {
-  // json object
+export default async function Home() {
+  const filePath = path.join(process.cwd(), "app", "list.json");
+
+  if (!fs.existsSync(filePath)) {
+    console.error(`File not found: ${filePath}`);
+    return (
+      <main className={styles.main}>
+        <p>File not found: {filePath}</p>
+      </main>
+    );
+  }
+
+  const jsonData = fs.readFileSync(filePath, "utf8");
+  const data = JSON.parse(jsonData);
+
   return (
-    <main className={styles.main}>
-      <HomepageCSR />
-    </main>
+    <>
+      <main className={styles.main}>
+        {data.map((d) => (
+          <>
+            <HomepageCSR
+              image={d.src}
+              image2={d.src2}
+              image3={d.imgmid}
+              image4={d.imgbottom}
+              image5={d.card}
+              image6={d.imgbelowbottom}
+            />
+          </>
+        ))}
+      </main>
+    </>
   );
 }
