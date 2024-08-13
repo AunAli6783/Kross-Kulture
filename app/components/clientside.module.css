@@ -1,8 +1,30 @@
+/* Header */
+.nav {
+  z-index: 1;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  border-bottom: 0.1px solid rgba(0, 0, 0, 0);
+}
+.red {
+  display: grid;
+  grid-template-columns: 0.2fr 1.5fr 0.2fr;
+  height: 70px;
+  color: black;
+  border-bottom: 0.1px solid rgba(0, 0, 0, 0.179);
+  position: sticky;
+  top: 0;
+}
+.btn2 {
+  visibility: hidden;
+  background-color: white;
+  border: 0;
+  display: none;
+}
 .dropdown {
   position: relative;
   display: inline-block;
 }
-
 .content {
   display: none;
   position: absolute;
@@ -13,8 +35,7 @@
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
-
-.content a {
+.dropdown .life a {
   color: black;
   padding-top: 15px;
   padding-left: 20px;
@@ -26,37 +47,12 @@
 .content a:hover {
   background-color: #f1f1f1;
 }
-.dropdown:hover .content {
+.dropdown:hover .life {
   display: block;
   width: 200px;
 }
 .dropdown:hover .dropbtn {
   background-color: #3e8e41;
-}
-
-.red {
-  display: grid;
-  grid-template-columns: 0.2fr 1.5fr 0.2fr;
-  height: 70px;
-  color: black;
-  border-bottom: 0.1px solid rgba(0, 0, 0, 0.179);
-  position: sticky;
-  top: 0;
-}
-
-.btn2 {
-  visibility: hidden;
-  background-color: white;
-  border: 0;
-  display: none;
-}
-
-.nav {
-  z-index: 1;
-  position: sticky;
-  top: 0;
-  background-color: #fff;
-  border-bottom: 0.1px solid rgba(0, 0, 0, 0);
 }
 
 .btn {
@@ -102,26 +98,27 @@
   padding-bottom: 15px;
 }
 
+/* Footer */
 .mainfooter {
   display: block;
   padding-top: 25px;
   display: flex;
   width: 90%;
   padding-left: 50px;
+  height: 800px;
 }
 
 .footer {
-  height: 500px;
+  height: 650px;
   background-color: #eee;
   width: 100%;
   margin: 0 auto;
   align-content: center;
   position: relative;
   bottom: 20px;
-  /* left: 70px; */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   align-self: center;
   text-align: center;
@@ -158,8 +155,53 @@
   flex-direction: column;
   gap: 20px;
   padding-bottom: 200px;
-
   padding-left: 50px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.span {
+  display: none;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.span {
+  display: none;
+}
+
+.accordian {
+  display: flex;
+}
+
+.accordion:target {
+  display: none;
+  visibility: hidden;
+}
+
+.accordion summary {
+  cursor: default;
+}
+
+.life {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.subhead {
+  font-size: x-large;
+  padding-bottom: 12px;
+}
+
+.life {
+  font-size: 20px;
 }
 
 @media (max-width: 900px) {
@@ -188,7 +230,6 @@
 
   .list {
     display: none;
-    /* flex-direction: row; */
     justify-content: space-evenly;
     align-items: center;
     font-weight: 400;
@@ -201,16 +242,6 @@
     visibility: hidden;
   }
 
-  .kross {
-    font-size: medium;
-    font-weight: bolder;
-    align-items: center;
-    justify-content: center;
-    padding-top: 10px;
-    padding-left: 10px;
-    height: 10px;
-  }
-
   .icons {
     height: 80px;
     width: 20px;
@@ -218,71 +249,6 @@
     padding-left: 15px;
     padding-bottom: 15px;
   }
-
-  .mainfooter {
-    display: block;
-    padding-top: 25px;
-    padding-left: 10px;
-  }
-
-  .footer {
-    height: 400px;
-    background-color: #eee;
-    padding-top: 10px;
-    width: 100%;
-    margin: 0 auto;
-    align-content: center;
-    position: relative;
-    bottom: 20px;
-    /* left: 70px; */
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: space-around;
-    align-items: center;
-    align-self: center;
-    text-align: left;
-    text-wrap: wrap;
-  }
-
-  .footinfo {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    font-weight: 100;
-    text-align: left;
-    padding-left: 10px;
-    padding-bottom: 10px;
-  }
-
-  .subhead {
-    font-size: small;
-    font-weight: bold;
-  }
-
-  .footsubscribe {
-    font-size: small;
-    font-weight: 100;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding-bottom: 18px;
-  }
-
-  .custome {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    display: flex;
-
-    flex-direction: column;
-    font-size: small;
-    font-weight: 100;
-    gap: 10px;
-    padding-bottom: 0px;
-    padding-left: 10px;
-  }
-
   .kross {
     color: black;
     background-color: white;
@@ -292,14 +258,12 @@
     font-weight: bolder;
     font-size: x-large;
   }
-
   .kross2 {
     font-size: x-large;
     width: 200px;
     padding-top: 22px;
     padding-left: 20px;
   }
-
   .newlist {
     position: absolute;
     color: black;
@@ -317,14 +281,12 @@
     justify-content: space-between;
     list-style: none;
   }
-
   .bar {
     color: black;
     z-index: 2;
     width: 30px;
     height: 25px;
   }
-
   .btn2 {
     visibility: visible;
     display: block;
@@ -362,5 +324,77 @@
   .dropdown:hover .content {
     display: none;
     visibility: hidden;
+  }
+
+  .mainfooter {
+    padding-left: 10px;
+  }
+
+  .footer {
+    height: auto;
+    background-color: #eee;
+    padding-top: 20px;
+    display: block;
+    text-align: left;
+  }
+
+  .accordion {
+    background-color: #eee;
+    border: none;
+    outline: none;
+    margin-bottom: 10px;
+  }
+
+  .subhead {
+    background-color: #ddd;
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .span {
+    display: block;
+    transform: rotate(90deg);
+    transition: transform 0.3s ease;
+  }
+
+  .accordion[open] .span {
+    transform: rotate(-90deg);
+  }
+
+  .accordion-life {
+    padding: 10px 20px;
+    background-color: #f9f9f9;
+    font-size: small;
+  }
+
+  .accordion-life div,
+  .accordion-life p {
+    margin: 5px 0;
+  }
+
+  .accordion {
+    pointer-events: auto;
+  }
+
+  .accordion[open] {
+    display: block;
+  }
+
+  .accordion summary {
+    cursor: pointer;
+  }
+
+  .subhead {
+    padding-top: 10px;
+    font-size: large;
+    padding-bottom: 12px;
+  }
+
+  .life {
+    padding-top: 10px;
+    font-size: 10px;
   }
 }
