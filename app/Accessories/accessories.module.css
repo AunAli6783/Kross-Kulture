@@ -1,0 +1,107 @@
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 50px;
+  max-width: 1100px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 30px 0px 30px 0px;
+}
+
+.img {
+  display: flex;
+  flex-direction: column;
+}
+
+.mainhead {
+  display: block;
+}
+
+.outer {
+  display: flex;
+  overflow: hidden;
+}
+.structure {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  align-items: right;
+  padding-top: 35px;
+  padding-bottom: 50px;
+  padding-left: 10px;
+  height: 300px;
+  overflow-x: scroll;
+  justify-content: start;
+  text-align: start;
+  align-items: start;
+}
+
+.slid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: space-around;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.structure::-webkit-scrollbar {
+  display: none;
+}
+
+.mainslider {
+  overflow: hidden;
+  position: relative;
+}
+
+.withsetting {
+  padding-top: 10px;
+  padding-left: 10px;
+  max-width: 250px;
+  max-height: 400px;
+  display: grid;
+}
+
+.flex {
+  display: flex;
+}
+
+.slidersize {
+  font-size: 25px;
+  border-radius: 45%;
+}
+
+.withsetting:hover {
+  .slidersize {
+    background-color: aliceblue;
+  }
+}
+
+.buttonslider {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.button {
+  text-decoration: none;
+  background: none;
+  border: none;
+}
+
+.lowercard {
+  padding-top: 10px;
+  padding-left: 8px;
+}
+
+.lowerpara1 {
+  font-size: 13px;
+  padding-bottom: 3px;
+}
+
+.lowerpara2 {
+  color: #ac0000;
+}
