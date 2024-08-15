@@ -257,7 +257,7 @@ export default function page() {
         </div>
       </div>
 
-      <div className={styles.outer}>
+      {/* <div className={styles.outer}>
         <div className={styles.structure}>
           {data.map((l) => (
             <div>
@@ -265,7 +265,7 @@ export default function page() {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

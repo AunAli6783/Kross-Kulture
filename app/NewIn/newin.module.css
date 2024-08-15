@@ -50,12 +50,14 @@
 }
 
 .slidersize {
-  background-color: blue;
-  font-size: 30px;
-  border-radius: 50%;
-  background: none;
-  padding-left: 10px;
-  padding-right: 10px;
+  font-size: 25px;
+  border-radius: 45%;
+}
+
+.withsetting:hover {
+  .slidersize {
+    background-color: aliceblue;
+  }
 }
 
 .buttonslider {
@@ -64,6 +66,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .button {
