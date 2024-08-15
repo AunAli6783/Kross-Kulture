@@ -1,7 +1,85 @@
+.mainhead {
+  display: block;
+}
+
+.outer {
+  display: flex;
+  overflow: hidden;
+}
 .structure {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 10px;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  align-items: right;
+  padding-top: 35px;
+  padding-bottom: 50px;
+  padding-left: 10px;
+  height: 300px;
+  overflow-x: scroll;
+  justify-content: start;
+  text-align: start;
+  align-items: start;
+}
+
+.slid {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.structure::-webkit-scrollbar {
+  display: none;
+}
+
+.mainslider {
+  overflow: hidden;
+  position: relative;
+}
+
+.withsetting {
+  padding-top: 10px;
+  padding-left: 10px;
+  max-width: 250px;
+  max-height: 400px;
+}
+
+.flex {
+  display: flex;
+}
+
+.slidersize {
+  background-color: blue;
+  font-size: 30px;
+  border-radius: 50%;
+  background: none;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.buttonslider {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.button {
+  text-decoration: none;
+  background: none;
+  border: none;
+}
+
+.lowercard {
+  padding-top: 10px;
+  padding-left: 8px;
+}
+
+.lowerpara1 {
+  font-size: 13px;
+  padding-bottom: 3px;
+}
+
+.lowerpara2 {
+  color: #ac0000;
 }
