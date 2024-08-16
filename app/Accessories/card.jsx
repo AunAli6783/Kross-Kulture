@@ -7,7 +7,7 @@ const Card = ({ source, text, price }) => {
   const [current, setCurrent] = useState(0);
   const prev = () =>
     setCurrent((current) => (current == 0 ? source.length - 1 : current - 1));
-  console.log(source.length);
+
   const next = () =>
     setCurrent((current) => (current == source.length - 1 ? 0 : current + 1));
   return (

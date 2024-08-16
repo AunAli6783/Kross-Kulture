@@ -33,8 +33,8 @@ const slides = [
   },
   {
     src: [
-      "https://cdn.comverseglobal.com/kross_kulture/products/product_images/DSC05734.jpg%3Fwidth%3D640",
-      "https://kross-kulture.comverseglobal.com/products/klx-00971-3-pc",
+      "https://cdn.comverseglobal.com/kross_kulture/products/product_images/DSC05892_2ed63069-0205-4aed-aa93-8280de600d2e.jpg%3Fwidth%3D640",
+      "https://cdn.comverseglobal.com/kross_kulture/products/product_images/DSC05929_b058786f-c60c-4bda-b5de-426b4e345316.jpg%3Fwidth%3D640",
     ],
     text: "Mehru KLX-00961 (3 PC)",
     price: "PKR 8,796",
