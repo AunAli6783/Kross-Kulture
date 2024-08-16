@@ -91,9 +91,7 @@
 .imagebottom {
   display: flex;
   gap: 20px;
-  /* text-align: center;
-  justify-content: center;
-  align-items: center; */
+
   padding-top: 35px;
   padding-bottom: 50px;
   width: 1100px;
@@ -116,6 +114,25 @@
   text-align: left;
 }
 .imagebottom::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  text-align: center;
+  width: 1100px;
+  height: auto;
+  overflow-x: scroll;
+  flex-basis: 400px;
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+.card::-webkit-scrollbar {
   display: none;
 }
 
@@ -182,15 +199,15 @@
 
   .imagebottom {
     display: flex;
-    gap: 20px;
+    gap: 15px;
     flex-direction: row;
     align-items: right;
     padding-top: 35px;
     padding-bottom: 50px;
-    padding-left: 900px;
+    padding-left: 800px;
     width: 1100px;
     height: auto;
-    overflow-x: scroll; /* Enable horizontal scrolling */
+    overflow-x: scroll;
   }
 
   .imagebottom::-webkit-scrollbar {
@@ -199,13 +216,16 @@
 
   .card {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     gap: 5px;
     padding-top: 10px;
     padding-bottom: 30px;
     font-size: small;
     text-align: center;
+    padding-left: 800px;
+    flex-basis: 250px;
+    justify-content: flex-start;
   }
   .belowbottom {
     display: flex;

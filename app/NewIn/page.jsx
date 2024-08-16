@@ -32,7 +32,7 @@ export default function page() {
               ))}
             </Slider>
             <div className={styles.lowercard}>
-              <p className={styles.lowerpara1}>Mehru KLX-00961 (3 PC)</p>
+              <p className={styles.lowerpara1}>Mehru KLX-00(3 PC)</p>
               <p className={styles.lowerpara2}>PKR 13,796</p>
             </div>
           </div>
@@ -46,7 +46,7 @@ export default function page() {
               ))}
             </Slider>
             <div className={styles.lowercard}>
-              <p className={styles.lowerpara1}>Shabnam KLX-00878 (3 PC)</p>
+              <p className={styles.lowerpara1}>Shabnam KLX-008(3 PC)</p>
               <p className={styles.lowerpara2}>PKR 12,796</p>
             </div>
           </div>
@@ -60,7 +60,7 @@ export default function page() {
               ))}
             </Slider>
             <div className={styles.lowercard}>
-              <p className={styles.lowerpara1}>Sehar KLX-00877 (3 PC)</p>
+              <p className={styles.lowerpara1}>Sehar KLX-00877(3 PC)</p>
               <p className={styles.lowerpara2}>PKR 8,796</p>
             </div>
           </div>
@@ -74,7 +74,7 @@ export default function page() {
               ))}
             </Slider>
             <div className={styles.lowercard}>
-              <p className={styles.lowerpara1}>KLX-01009 (3 PC)</p>
+              <p className={styles.lowerpara1}>KLX-01009(3 PC)</p>
               <p className={styles.lowerpara2}>PKR 7,796</p>
             </div>
           </div>
@@ -90,7 +90,7 @@ export default function page() {
               ))}
             </Slider>
             <div className={styles.lowercard}>
-              <p className={styles.lowerpara1}>Rose KLX-00971 (3 PC)</p>
+              <p className={styles.lowerpara1}>Rose KLX-00971(3 PC)</p>
               <p className={styles.lowerpara2}>PKR 10,796</p>
             </div>
           </div>
@@ -104,7 +104,7 @@ export default function page() {
               ))}
             </Slider>
             <div className={styles.lowercard}>
-              <p className={styles.lowerpara1}>Maroon Crush KKSG-039</p>
+              <p className={styles.lowerpara1}>Maroon Crush KSG-0</p>
               <p className={styles.lowerpara2}>PKR 9,796</p>
             </div>
           </div>
@@ -118,7 +118,7 @@ export default function page() {
               ))}
             </Slider>
             <div className={styles.lowercard}>
-              <p className={styles.lowerpara1}>Amber Glow KKSG-042</p>
+              <p className={styles.lowerpara1}>Amber Glow KSG-42</p>
               <p className={styles.lowerpara2}>PKR 8,796</p>
             </div>
           </div>
@@ -132,7 +132,7 @@ export default function page() {
               ))}
             </Slider>
             <div className={styles.lowercard}>
-              <p className={styles.lowerpara1}>Red Majesty KLX-00993 (3 PC)</p>
+              <p className={styles.lowerpara1}>Red Majesty KL93(3 PC)</p>
               <p className={styles.lowerpara2}>PKR 8,796</p>
             </div>
           </div>
@@ -164,7 +164,7 @@ export default function page() {
               ))}
             </Slider>
             <div className={styles.lowercard}>
-              <p className={styles.lowerpara1}>Ash KLX-00959 (3 PC)</p>
+              <p className={styles.lowerpara1}>Ash KX-05(3 PC)</p>
               <p className={styles.lowerpara2}>PKR 12,796</p>
             </div>
           </div>
@@ -178,7 +178,7 @@ export default function page() {
               ))}
             </Slider>
             <div className={styles.lowercard}>
-              <p className={styles.lowerpara1}>Eda KLX- 00917 (3 PC)</p>
+              <p className={styles.lowerpara1}>Eda KX-0917(3 PC)</p>
               <p className={styles.lowerpara2}>PKR 3,796</p>
             </div>
           </div>
@@ -192,7 +192,7 @@ export default function page() {
               ))}
             </Slider>
             <div className={styles.lowercard}>
-              <p className={styles.lowerpara1}>Bianca KLX- 00916 (3 PC)</p>
+              <p className={styles.lowerpara1}>Bianca KLX-009(3 PC)</p>
               <p className={styles.lowerpara2}>PKR 12,796</p>
             </div>
           </div>
@@ -208,7 +208,7 @@ export default function page() {
               ))}
             </Slider>
             <div className={styles.lowercard}>
-              <p className={styles.lowerpara1}>Isabelle KLX- 00915 (3 PC)</p>
+              <p className={styles.lowerpara1}>Isabelle K-005(3 PC)</p>
               <p className={styles.lowerpara2}>PKR 9,796</p>
             </div>
           </div>
@@ -222,7 +222,7 @@ export default function page() {
               ))}
             </Slider>
             <div className={styles.lowercard}>
-              <p className={styles.lowerpara1}>Celeste KLX- 00914 (3 PC)</p>
+              <p className={styles.lowerpara1}>Celeste KL914(3 PC)</p>
               <p className={styles.lowerpara2}>PKR 11,796</p>
             </div>
           </div>
@@ -236,7 +236,7 @@ export default function page() {
               ))}
             </Slider>
             <div className={styles.lowercard}>
-              <p className={styles.lowerpara1}>Mehru KLX-00961 (3 PC)</p>
+              <p className={styles.lowerpara1}>Mehru KX-0096(3 PC)</p>
               <p className={styles.lowerpara2}>PKR 8,996</p>
             </div>
           </div>
@@ -250,7 +250,7 @@ export default function page() {
               ))}
             </Slider>
             <div className={styles.lowercard}>
-              <p className={styles.lowerpara1}>Sophie KLX- 00913 (3 PC)</p>
+              <p className={styles.lowerpara1}>Sophie KLX-13(3 PC)</p>
               <p className={styles.lowerpara2}>PKR 10,796</p>
             </div>
           </div>

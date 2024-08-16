@@ -63,6 +63,8 @@
 
 .flex {
   display: flex;
+  width: 265px;
+  height: 350px;
 }
 
 .slidersize {
@@ -108,4 +110,39 @@
 
 .lowerpara2 {
   color: #ac0000;
+}
+@media (max-width: 780px) {
+  .flex {
+    width: 150px;
+    height: 200px;
+    overflow: hidden;
+  }
+
+  .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    max-width: 1100px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+
+    padding: 30px 0px 30px 0px;
+    padding-left: 5px;
+  }
+  .mainslider:hover {
+    .slidersize {
+      background-color: aliceblue;
+    }
+    .buttonslider {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-right: 10px;
+      padding-left: 10px;
+      padding-bottom: 50px;
+    }
+  }
 }

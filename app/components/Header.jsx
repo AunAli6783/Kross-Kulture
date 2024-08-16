@@ -5,6 +5,7 @@ import Link from "next/link";
 import styles from "./clientside.module.css";
 import { useState, useEffect } from "react";
 import { RxDropdownMenu } from "react-icons/rx";
+import { RiMenu2Line } from "react-icons/ri";
 import { CiSearch } from "react-icons/ci";
 import { CiHeart } from "react-icons/ci";
 import { CiShoppingBasket } from "react-icons/ci";
@@ -18,10 +19,6 @@ export default function Header() {
     };
 
     window.addEventListener("resize", handleResize);
-
-    // return () => {
-    //   window.removeEventListener("resize", handleResize);
-    // };
   });
 
   const [menuOpen, setMenuOpen] = useState(false);
@@ -37,7 +34,7 @@ export default function Header() {
           className={menuOpen ? styles.mainbtn : styles.btn2}
           onClick={toggleMenu}
         >
-          <RxDropdownMenu className={menuOpen ? styles.nobar : styles.bar} />
+          <RiMenu2Line className={menuOpen ? styles.nobar : styles.bar} />
         </button>
         <div className={menuOpen ? styles.kross : styles.kross2}>
           <Link href={"/"} onClick={toggleMenu}>
@@ -53,7 +50,9 @@ export default function Header() {
           </li>
           <li>
             <div className={styles.dropdown}>
-              <Link href={"/Accessories"}>ACCESSORIES</Link>
+              <Link href={"/Accessories"} onClick={toggleMenu}>
+                ACCESSORIES
+              </Link>
               <div className={styles.content}>
                 <a href="#">Link1 </a>
                 <a href="#">Link2 </a>

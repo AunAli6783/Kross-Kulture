@@ -306,11 +306,12 @@
     size: 10px;
   }
   .nobar {
-    height: 20px;
-    width: 20px;
+    height: 25px;
+    width: 30px;
     color: black;
-    padding-bottom: 1100px;
-    padding-right: 5px;
+    padding-bottom: 1300px;
+    padding-right: 0px;
+    padding-left: 5px;
   }
   .icons {
     height: 80px;
