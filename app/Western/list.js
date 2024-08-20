@@ -102,13 +102,4 @@ const slides = [
   },
 ];
 
-const slides2 = [
-  {
-    src: [
-      "https://cdn.comverseglobal.com/kross_kulture/products/product_images/web-banner-upated.jpg%3Fwidth%3D1300",
-      "https://cdn.comverseglobal.com/kross_kulture/products/product_images/azadi-sale-pre-hype_1_11zon.jpg%3Fwidth%3D1300",
-    ],
-  },
-];
-
-module.exports = { slides, slides2 };
+module.exports = { slides };

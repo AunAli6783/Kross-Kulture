@@ -1,8 +1,8 @@
-"use client";
 import React from "react";
 import styles from "./homepg.module.css";
-import { slides } from "./list";
+import { slides, slides2 } from "./list";
 import Card from "@/app/Accessories/card";
+import Slide from "./card";
 export default function HomepageCSR({
   image,
   image2,
@@ -15,14 +15,8 @@ export default function HomepageCSR({
     <div className={styles.main}>
       <div className={styles.head}>
         <div className={styles.imagetop}>
-          {image.map((i) => (
-            <img
-              className={styles.laptop2}
-              src={i}
-              alt="img1"
-              height={"auto"}
-              width={"100%"}
-            />
+          {slides2.map((i) => (
+            <Slide source={i.src} />
           ))}
 
           {image2.map((i) => (

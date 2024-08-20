@@ -96,9 +96,6 @@
   padding-bottom: 50px;
   width: 1100px;
   height: auto;
-  overflow-x: scroll; /* Enable horizontal scrolling */
-  scroll-behavior: smooth;
-  /* background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c); */
 }
 
 .card div h4 {
@@ -113,27 +110,19 @@
   font-weight: lighter;
   text-align: left;
 }
-.imagebottom::-webkit-scrollbar {
-  display: none;
-}
 
 .card {
   display: flex;
-  flex-direction: row;
   gap: 5px;
   padding-top: 10px;
   padding-bottom: 30px;
   text-align: center;
   width: 1100px;
   height: auto;
-  overflow-x: scroll;
-  flex-basis: 400px;
-  gap: 20px;
-  justify-content: flex-start;
-}
-
-.card::-webkit-scrollbar {
-  display: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+  padding-left: 60px;
 }
 
 .mainslider {
